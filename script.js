@@ -46,4 +46,4 @@ let averageAge =
 
 
 
-console.log(finalResult[5].age)
+// console.log(finalResult[5].age)

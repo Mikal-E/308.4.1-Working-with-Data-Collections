@@ -42,8 +42,29 @@ console.log(finalResult)
 
 // Average age
 
-let averageAge = 
-
-
-
+// let averageAge = finalResult
 // console.log(finalResult[5].age)
+
+let totalAge = 0;
+
+for (let i = 0; i < finalResult.length; i++){
+    totalAge += Number(finalResult[i].age);
+}
+
+let averageAge = totalAge / finalResult.length;
+
+console.log(averageAge);
+
+// Part 5: Putting data set back to CSV format
+
+let csvData = "ID, Name, Occupation, Age\n";
+
+for (let i = 0; i < finalResult.length; i++){
+    let personalInfo = finalResult[i];
+
+    csvData += `${personalInfo.id}, ${personalInfo.name}, ${personalInfo.occupation}, ${personalInfo.age}`,
+
+
+
+console.log(csvData);
+}
